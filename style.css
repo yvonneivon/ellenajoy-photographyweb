@@ -54,13 +54,14 @@ li,
 button,
 label,
 input,
-p {
+p,
+a {
     font-size: var(--text);
 }
 
 a {
-    color: white;
     text-decoration: none;
+    color: black;
 }
 
 ul {
@@ -72,4 +73,92 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    font-family: "Ruhl", sans-serif;
+}
+
+h1 {
+    font-family: "Vibes", sans-serif;
+}
+
+/* Nav Section */
+.main-head {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    position: relative;
+
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2rem 0rem;
+}
+
+#logo {
+    flex: 1 1 20rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 20rem;
+}
+
+.hero {
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.hero-introduction {
+    flex: 3 1 40rem;
+    text-align: center;
+}
+
+.hero-introduction p {
+    padding: 3rem 6rem;
+}
+
+.hero-introduction h2 {
+    padding-top: 2rem;
+}
+
+.hero-introduction a {
+    padding: 1rem 4rem;
+    border: 3px solid black;
+    margin-bottom: 2rem;
+}
+
+.hero-images {
+    flex: 1 1 40rem;
+    background: linear-gradient(#dad8dd, #dad1d4);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-ellena {
+    width: 40rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plant {
+    position: absolute;
+    bottom: 0;
+    left: 30rem;
+    z-index: -1;
+    width: 25rem;
+}
+
+.plant1 {
+    left: -7rem;
 }
